@@ -1,0 +1,37 @@
+@media (max-width: 800px) {
+    .mobile {
+        display: block;
+    }
+    .navbar {
+        border: none;
+    }
+    .logo {
+        width: auto;
+    }
+    .main {
+        display: none;
+    }
+    .title {
+        text-align: center;
+    }
+    .navbar-nav {
+        display: none;
+    }
+    .app-index {
+        margin-bottom: 37px;
+    }
+    .nav-icon-left {
+        display: flex;
+        float: left;
+    }
+    .time-line {
+        display: none;
+    }
+    .btn-mobile {
+        text-align: center;
+    }
+    .avatar-wrap {
+        display: flex;
+        justify-content: center;
+    }
+  }

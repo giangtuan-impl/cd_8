@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Page</title>
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-md navbar-light header-background mb-5">
+        <i class="fas fa-angle-left fa-3x nav-icon-left"></i>
+        <nav class="container-fluid logo">
+            <a href="#" class="navbar-branch">
+                <img src="image/logo.png" alt="image" height="50px">
+            </a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown no-arrow">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mr-2 d-none d-lg-inline">Name</span>
+                        <img class="img-profile rounded-circle" src="image/avatar.png" alt="image">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">My Account</a>
+                        <a class="dropdown-item" href="#">Member Manage</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-fluid main">
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h2 class="title">App Name</h2>
+            <a href="edit_app_page.html" class="d-none d-sm-inline-block btn btn-outline-secondary"><i class="fas fa-cog"></i> Settings</a>
+        </div>
+        <div class="row mb-4">
+            <div class="col-lg-6 col-md-12">
+                <img src="image/img-icon.png" class="icon-app" alt="image">
+                <div class="app-index">
+                    <h5>IOS</h5>
+                    <ul>
+                        <li>
+                            <span>Bundle ID</span>
+                        </li>
+                        <li>
+                            <span>Build number: #100</span>
+                        </li>
+                        <li>
+                            <span>Update at: 2020/01/01</span>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#qrcodeios">Show QR code</button>
+                <div class="modal fade" id="qrcodeios" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">QRCode</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body qr_code">
+                                <img id='qrcodeios' src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=150x150" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <img src="image/img-icon.png" class="icon-app" alt="image">
+                <div class="app-index">
+                    <h5>Android</h5>
+                    <ul>
+                        <li>
+                            <span>Bundle ID</span>
+                        </li>
+                        <li>
+                            <span>Build number: #100</span>
+                        </li>
+                        <li>
+                            <span>Update at: 2020/01/01</span>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#qrcodeandroid">Show QR code</button>
+                <div class="modal fade" id="qrcodeandroid" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">QRCode</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body qr_code">
+                                <img id='qrcodeandroid' src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=150x150" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="show-member">
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <h3>Member</h3>
+                <button class="d-none d-sm-inline-block btn btn-outline-secondary" data-toggle="modal" data-target="#invitemember">Add new member</button>
+            </div>
+            <div class="member-list mb-4">
+                <div class="member-content">
+                    <img src="image/img-icon.png" class="avatar-icon" alt="image">
+                    <div class="mem-text">
+                        <h5>Name</h5>
+                        <span>Email</span>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#deleteMember">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="member-content">
+                    <img src="image/img-icon.png" class="avatar-icon" alt="image">
+                    <div class="mem-text">
+                        <h5>Name</h5>
+                        <span>Email</span>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="member-content">
+                    <img src="image/img-icon.png" class="avatar-icon" alt="image">
+                    <div class="mem-text">
+                        <h5>Name</h5>
+                        <span>Email</span>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="member-content">
+                    <img src="image/img-icon.png" class="avatar-icon" alt="image">
+                    <div class="mem-text">
+                        <h5>Name</h5>
+                        <span>Email</span>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="member-content">
+                    <img src="image/img-icon.png" class="avatar-icon" alt="image">
+                    <div class="mem-text">
+                        <h5>Name</h5>
+                        <span>Email</span>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+            <button class="btn btn-outline-secondary mb-4" data-toggle="modal" data-target="#showUUIDs">Show all UUIDs</button>  
+        </div>
+    </div>
+    <div class="container-fluid mobile">
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h2 class="title">App Name</h2>
+        </div>
+        <div class="col-md-12 left">
+            <img src="image/img-icon.png" class="icon-app" alt="image">
+            <div class="app-index">
+                <span>Bundle ID</span><br>
+                <span>Build number: #100</span><br>
+                <span>Update at: 2020/01/01</span><br>
+            </div>
+            <a href="#" type="button" class="btn btn-outline-secondary">Click here to download</a>
+        </div>
+    </div>
+    <!-- Popup delete member -->
+    <div class="modal fade" id="deleteMember" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="delete-member">Delete User</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                Delete this member?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup show UUIDs -->
+    <div class="modal fade" id="showUUIDs" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">IOS devices UUIDs list</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>
+                            UUIDs 1
+                        </li>
+                        <li>
+                            UUIDs 2
+                        </li>
+                        <li>
+                            UUIDs 3
+                        </li>
+                        <li>
+                            UUIDs 4
+                        </li>
+                        <li>
+                            UUIDs 5
+                        </li>
+                        <li>
+                            UUIDs 6
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup invite member -->
+    <div class="modal fade" id="invitemember" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Invite Members</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body body-search">
+                    <div class="member-search">
+                        <form>
+                            <i class="fas fa-search"></i>
+                            <input type="text" name="search" placeholder="search" />
+                        </form>
+                    </div>
+                    <div class="scroll-mem">
+                        <div class="select-member">
+                            <img src="image/img-icon.png" class="avatar-icon" alt="image">
+                            <div class="mem-text">
+                                <h5>Name</h5>
+                                <span>Email</span>
+                            </div>
+                            <button type="button" class="close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="select-member">
+                            <img src="image/img-icon.png" class="avatar-icon" alt="image">
+                            <div class="mem-text">
+                                <h5>Name</h5>
+                                <span>Email</span>
+                            </div>
+                            <button type="button" class="close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="select-member">
+                            <img src="image/img-icon.png" class="avatar-icon" alt="image">
+                            <div class="mem-text">
+                                <h5>Name</h5>
+                                <span>Email</span>
+                            </div>
+                            <button type="button" class="close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="select-member">
+                            <img src="image/img-icon.png" class="avatar-icon" alt="image">
+                            <div class="mem-text">
+                                <h5>Name</h5>
+                                <span>Email</span>
+                            </div>
+                            <button type="button" class="close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer footer-search">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Invite members</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

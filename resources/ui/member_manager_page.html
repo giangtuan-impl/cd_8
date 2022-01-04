@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Manager Page</title>
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-md navbar-light header-background mb-5">
+        <i class="fas fa-angle-left fa-3x nav-icon-left"></i>
+        <nav class="container-fluid logo">
+            <a href="#" class="navbar-branch">
+                <img src="image/logo.png" alt="image" height="50px">
+            </a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown no-arrow">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mr-2 d-none d-lg-inline">Name</span>
+                        <img class="img-profile rounded-circle" src="image/avatar.png" alt="image">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">My Account</a>
+                        <a class="dropdown-item" href="#">Member Manage</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-fluid main">
+        <div class="panel panel-default">
+            <h3 class="h2 text-gray-900 mb-4 text-center">Member manager</h3>
+        </div>
+        <div class="show-member">
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <h3 class="h3 text-gray-900 mb-4">Member</h3>
+                <a href="create_new_member.html" class="d-none d-sm-inline-block btn btn-outline-secondary">Add new member</a>
+            </div>
+            <div class="member-list mb-4">
+                <div class="member-content">
+                    <img src="image/img-icon.png" class="avatar-icon" alt="image">
+                    <div class="mem-text">
+                        <h5>Name</h5>
+                        <span>Email</span>
+                    </div>
+                    <div class="mem-text-right">
+                        <div class="role-member">
+                            <label for="role">Role: </label>
+                            <select name="role_id">
+                                <option>Admin</option>
+                                <option>Member</option>
+                            </select>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#deleteMember">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="member-content">
+                    <img src="image/img-icon.png" class="avatar-icon" alt="image">
+                    <div class="mem-text">
+                        <h5>Name</h5>
+                        <span>Email</span>
+                    </div>
+                    <div class="mem-text-right">
+                        <div class="role-member">
+                            <label for="role">Role: </label>
+                            <select name="role_id">
+                                <option>Admin</option>
+                                <option>Member</option>
+                            </select>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#deleteMember">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="member-content">
+                    <img src="image/img-icon.png" class="avatar-icon" alt="image">
+                    <div class="mem-text">
+                        <h5>Name</h5>
+                        <span>Email</span>
+                    </div>
+                    <div class="mem-text-right">
+                        <div class="role-member">
+                            <label for="role">Role: </label>
+                            <select name="role_id">
+                                <option>Admin</option>
+                                <option>Member</option>
+                            </select>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#deleteMember">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="member-content">
+                    <img src="image/img-icon.png" class="avatar-icon" alt="image">
+                    <div class="mem-text">
+                        <h5>Name</h5>
+                        <span>Email</span>
+                    </div>
+                    <div class="mem-text-right">
+                        <div class="role-member">
+                            <label for="role">Role: </label>
+                            <select name="role_id">
+                                <option>Admin</option>
+                                <option>Member</option>
+                            </select>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#deleteMember">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="member-content">
+                    <img src="image/img-icon.png" class="avatar-icon" alt="image">
+                    <div class="mem-text">
+                        <h5>Name</h5>
+                        <span>Email</span>
+                    </div>
+                    <div class="mem-text-right">
+                        <div class="role-member">
+                            <label for="role">Role: </label>
+                            <select name="role_id">
+                                <option>Admin</option>
+                                <option>Member</option>
+                            </select>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#deleteMember">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup delete member -->
+    <div class="modal fade" id="deleteMember" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Delete User</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                Delete this member?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
